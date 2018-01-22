@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<style>
+			#left {
+				float: left;
+				width: 33%;
+			}
+
+			#right {
+				float: right;
+				width: 66%;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>HW02 Task Three</h1>
+		<div id="left">
+			<ul>
+				<li><a href="#" id="lorem-link" onclick="showLorem()">Lorem Ipsem</a></li>
+				<li><a href="#" id="bottles-link" onclick="showBottles()">99 Bottles</a></li>
+				<li><a href="#" id="last-link" onclick="showLast()">Last Thing</a></li>
+			</ul>
+		</div>
+		<div id="right">
+		</div>
+		<script>
+			var right = document.getElementById("right");
+			function showLorem() {
+				right.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."; //Attribution goes to https://en.wikipedia.org/wiki/Lorem_ipsum;
+			}
+
+			function showBottles() {
+				right.innerHTML = "99 bottles of beer on the wall, 99 bottles of beer. Take one down, pass it around, 98 bottles of beer on the wall. \n 98 bottles of beer on the wall, 98 bottles of beer. Take one down, pass it around, 97 bottles of beer on the wall. \n 97 bottles of beer on the wall, 97 bottles of beer. Take one down, pass it around, 96 bottles of beer on the wall. \n 96 bottles of beer on the wall, 96 bottles of beer. Take one down, pass it around, 95 bottles of beer on the wall. \n"; //Attribution goes to https://en.wikipedia.org/wiki/99_Bottles_of_Beer
+			}
+
+			function showLast() {
+				right.innerHTML = "this is the third thing";
+			}
+		</script>
+	</body>
+</html>
+

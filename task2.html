@@ -1,0 +1,31 @@
+<html>
+	<body>
+		<div id="container">
+			<h2 id="counter">10</h2>
+			<div id="buttons">
+				<button onclick="counterAlert()">Pop up</button>
+				<button onclick="increment()">Increment</button>
+				<button onclick="append()">Append</button>
+			</div>
+		</div>
+		<script>
+			var counter = 10;
+			var countDiv = document.getElementById('counter');
+
+			function counterAlert() {
+				window.alert(counter)
+			}
+
+			function increment() {
+				counter++;
+				countDiv.innerHTML = counter;
+			}
+
+			function append() {
+				var newDiv = document.createElement('div');
+				newDiv.append(document.createTextNode(counter));
+				document.getElementById('container').appendChild(newDiv);
+			}
+		</script>
+	</body>
+</html>
